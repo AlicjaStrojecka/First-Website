@@ -1,0 +1,102 @@
+.projects-section {
+  background-color: var(--green-4);
+  display: flex;
+  max-height: 40vw;
+  flex-direction: column;
+  padding-bottom: 1vw;
+}
+
+.projects-text {
+  display: flex;
+  font-size: 4vw;
+  margin-top: 3vw;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.project-container  {
+  padding: 1vw;
+  transition: all .4s;
+}
+
+.project-container:hover {
+  background-color: var(--green-overlay);
+}
+
+.projects-grid {
+  overflow-y: auto;
+  display: grid;
+  margin: 2vw 3vw 2vw 3vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.projects-grid::-webkit-scrollbar {
+  background: var(--green-2);
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background: var(--green-3);
+  border-radius: 1vw;
+}
+
+.project-header {
+  position: relative;
+  margin-bottom: 0.7vw;
+  display: flex;
+  /* align-items: center; */
+  overflow: hidden;
+  transition: all, 0.4s;
+}
+
+.project-name {
+  font-size: 1.5vw;
+  padding: 1vw 1.3vw;
+  flex: 1;
+  background-color: var(--green-3);
+}
+
+.project-link {
+  color: white;
+  font-size: 1.5vw;
+  text-decoration: none;
+  display: flex;
+  padding: 1vw;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0;
+  left: 27vw;
+  transition: all .4s;
+  background-color: var(--green-2);
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.project-link:hover { 
+  left: 0;
+  right: 0;
+}
+
+.project-link::before {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-right: 1.3vw;
+  content: "<";
+}
+
+.project-link:hover::before {
+  content: ">";
+}
+
+
+.project-description {
+  font-size: 1.2vw;
+  padding: 1vw 1.3vw;
+  flex: 1;
+  /* border-radius: 10px; */
+  background-color: var(--green-overlay);
+}

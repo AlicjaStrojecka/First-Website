@@ -1,0 +1,67 @@
+:root {
+  --bg-color: rgb(229, 247, 225);
+  --green-1: rgb(169, 243, 182);
+  --green-overlay: rgba(169, 243, 182, 0.5);
+  --green-2: rgb(62, 202, 163);
+  --green-3: rgb(49, 154, 135);
+  --green-4: rgb(19, 107, 103);
+  --brown-1: rgb(101, 64, 71);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: var(--bg-color); */
+  background-image: url(../images/background.jpg);
+  font-family: Arial;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 70vw;
+  color: white;
+  padding-top: 7vw;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-section,
+.projects-section,
+.about-me-section {
+  height: 80vh; 
+  margin-bottom: 16vh;
+  position: relative;
+}
+
+.skills-section {
+  position: relative;
+}
+
+
+.home-nav {
+  position: absolute;
+  top: 0;
+}
+
+.skills-nav {
+  position: absolute;
+  top: -14.1vh;
+}
+
+.projects-nav {
+  position: absolute;
+  top: -14.5vh;
+}
+
+.about-me-nav {
+  position: absolute;
+  top: -10vh;
+}
+

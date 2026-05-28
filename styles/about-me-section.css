@@ -1,0 +1,156 @@
+.about-me-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  padding: 3vw 4vw;
+  height: fit-content;
+  background-color: var(--green-3);
+}
+
+.about-me-title {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+
+.about-me-info {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 1vw;
+}
+
+.quick-desc {
+  background-color: var(--green-overlay);
+  padding: 2vw 2vw;
+  font-size: 1.8vw;
+  flex: 4;
+}
+
+.quick-desc p {
+  font-size: 2vw;
+  margin-bottom: 0.7vw;
+}
+
+.hobbies {
+  line-height: 2.5vw;
+}
+
+.pic-and-socials {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.about-me-pic {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16vw;
+  height: 14vw;
+  overflow: hidden;
+  padding: 3vw 2vw 2vw 2vw;
+  background-color: var(--green-overlay);
+}
+
+.pic-text {
+  position: absolute;
+  opacity: 0;
+  font-size: 1.5vw;
+  top: 4.3vw;
+  left: -0.8vw;
+  padding: 1.8vw;
+  transition: opacity .4s;
+}
+
+.about-me-pic:hover .pic-text {
+  opacity: 1;
+}
+
+.pic {
+  width: 18vw;
+}
+
+
+.socials-display {
+  margin-top: 2vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1;
+  width: 18vw;
+  padding: 0 1vw;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+  background-color: var(--green-4);
+}
+
+.socials-text {
+  position: absolute;
+  top: 0.7vw;
+  opacity: 0;
+  z-index: 1;
+  font-size: 1.8vw;
+  transition: all .4s;
+}
+
+.socials-display:hover {
+  .socials-overlay {
+    width: 100%;
+  }
+
+  .socials-text {
+    opacity: 1;
+  }
+
+  .socials-container {
+    margin-top: 2.5vw;
+  }
+
+  padding: 0.7vw 1vw;
+}
+
+.socials-container {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+}
+
+.icons {
+  flex: 1;
+  display: flex;
+}
+
+.social {
+  z-index: 1;
+}
+
+.socials-icon {
+  object-fit: cover;
+  object-position: center;
+  width: 3vw;
+  z-index: 1;
+  aspect-ratio: 1/1;
+  padding: 0.5vw;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.social:hover {
+  .socials-icon {
+    background-color: var(--green-overlay);
+  }
+}
